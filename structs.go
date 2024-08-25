@@ -28,10 +28,10 @@ func main() {
 		createdAt: time.Now(),
 	}
 
-	outPutUserDetails(appUser)
+	outPutUserDetails(&appUser)
 }
 
-func outPutUserDetails(u user) {
+func outPutUserDetails(u *user) {
 	fmt.Println(u.firstName, u.lastName, u.birthDate)
 }
 
