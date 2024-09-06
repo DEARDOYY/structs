@@ -20,6 +20,11 @@ func main() {
 		return
 	}
 
+	admin := user.NewAdmin("test@example.com", "test123")
+
+	admin.User.OutPutUserDetails()
+	admin.User.OutPutUserDetails()
+
 	appUser.OutPutUserDetails()
 	appUser.ClearUserName()
 }
